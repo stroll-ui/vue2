@@ -1,0 +1,40 @@
+.sm-menu{
+  margin-top 60px
+  height calc(100vh - 60px)
+  overflow-y auto
+  overflow-x hidden
+  .sm-menu-item{
+    width 180px
+    min-height 30px
+    margin 8px 10px
+    position relative
+    background rgba(255, 255, 255, 0.08)
+    border-radius 4px
+  }
+  i.sm-menu-item-icon, span.sm-menu-item-title{
+    display inline-block
+    float left
+  }
+  i.sm-menu-item-icon, i.sm-submenu-item-icon{
+    color: rgba(255, 255, 255, 0.65)
+    font-size 14px
+    width 14px
+    height 14px
+    margin 8px
+  }
+  span.sm-menu-item-title,span.sm-menu-submenu-title{
+    color: rgba(255, 255, 255, 0.65)
+    height 30px
+    line-height 30px
+  }
+  .sm-menu a>div:hover {
+    background-color rgba(0, 135, 255, 1)
+    span.sm-menu-item-title,span.sm-menu-submenu-title,
+    i.sm-menu-item-icon, i.sm-submenu-item-icon{
+      color rgba(255, 255, 255, 1)
+    }
+    .sm-submenu-arrow{
+      color rgba(255, 255, 255, 1)
+    }
+  }
+}

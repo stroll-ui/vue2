@@ -1,0 +1,53 @@
+.sm-min-menu{
+  margin-top 60px
+  height calc(100vh - 60px)
+
+  .sm-min-menu-item{
+    display inline-block
+    padding 8px
+    margin-top 8px
+    margin-bottom 8px
+    transform translate(25%, 0%)
+    margin-left 10%
+    background-color rgba(255, 255, 255, 0.08)
+    border-radius 4px
+  }
+  .sm-menu-item-group{
+    position relative
+    &:hover {
+      &>.sm-menu-item-group-box{
+        display block
+      }
+      &>.sm-min-menu-item-bridge{
+        display block
+      }
+    }
+  }
+  .sm-min-menu-item-bridge{
+    display none
+    position absolute
+    z-index 3
+    bottom 0px
+    right 0px
+    width 12px
+    height 33px
+  }
+  .iconfont{
+    font-zise 14px
+    color: rgba(255, 255, 255, 0.65)
+    &:hover {
+      color: rgba(255, 255, 255, 1)
+      background-color rgba(0, 135, 255, 1)
+    }
+  }
+  .sm-menu-item-group-box{
+    position absolute
+    z-index 3
+    display none
+    top -12px
+    right -156px
+    width 150px
+    padding 8px 0
+    background-color rgba(255, 255, 255, 1)
+  }
+}

@@ -1,0 +1,88 @@
+@import '~@style/public.styl'
+// layout size 尺寸
+$headerIconSize = 16px // 
+$headerTouXiang = 20px // 头部-头像大小
+$headerHeight = 50px // 头部高度
+$asideMinWidth = 60px // 左侧导航最小宽度
+$asideMaxWidth = 200px // 左侧导航最大宽度
+$mainPadding = 20px // 内容区域内边距
+$asideSwitchTop = 112px // 左侧导航展开收起按钮距离顶部的距离
+
+// color 颜色
+$primary = #0087FF // 主要
+$success = #52C41B// 成功
+$warning = #FFAC3E // 警告
+$danger = #FF393C // 错误
+$info = #909399 // 信息
+
+$defaultPaddingV = 11px
+$defaultPaddingH = 20px
+$mediumPaddingV = 8px
+$mediumPaddingH = 16px
+$smallPaddingV = 6px
+$smallPaddingH = 12px
+$miniPaddingV = 6px
+$miniPaddingH = 15px
+
+$defaultHeight = 40px
+$mediumHeight = 32px
+$smallHeight = 28px
+$miniHeight = 26px
+
+$fontSizeExtraLarge = 20px
+$fontSizeLarge = 16px
+$fontSizeMedium = 16px
+$fontSizeBase = 14px
+$fontSizeSmall= 12px
+
+$borderColor = #D9D9D9
+
+
+.hover { // 鼠标悬停状态
+  opacity 0.7
+}
+.active { // 激活状态
+  opacity 0.7
+}
+.focusBorder { // 取得焦点状态
+  box-shadow 0px 0px 2px 0px $primary
+}
+.activeBackColor { // 选中背景色
+  color rgba(0, 0, 0, 0.85)
+  font-weight 500
+  background-color rgba(0, 135, 255, 0.1) !important
+}
+
+.t90{
+  transform rotate(90deg)
+}
+
+.t180{
+  transform rotate(180deg)
+}
+
+:export {
+  primaryColor: $primary
+  successColor: $success
+  warningColor: $warning
+  dangerColor: $danger
+  infoColor: $info
+  defaultPaddingV: $defaultPaddingV
+  defaultPaddingH: $defaultPaddingH
+  mediumPaddingV: $mediumPaddingV
+  mediumPaddingH: $mediumPaddingH
+  smallPaddingV: $smallPaddingV
+  smallPaddingH: $smallPaddingH
+  defaultHeight: $defaultHeight
+  mediumHeight: $mediumHeight
+  smallHeight: $smallHeight
+  miniHeight: $miniHeight
+  stylHeaderHeight: $headerHeight
+  stylAsideMinWidth: $asideMinWidth
+  stylAsideMaxWidth: $asideMaxWidth
+  fontSizeExtraLarge: $fontSizeExtraLarge
+  fontSizeLarge: $fontSizeLarge
+  fontSizeMedium: $fontSizeMedium
+  fontSizeBase: $fontSizeBase
+  fontSizeSmall: $fontSizeSmall
+}

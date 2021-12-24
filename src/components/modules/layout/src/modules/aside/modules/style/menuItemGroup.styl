@@ -1,0 +1,35 @@
+.sm-menu-item-group-box {
+  box-shadow 2px 1px 5px 1px rgba(0,0,0,.1)
+  border-radius 5px
+  .sm-menu-item-group-bridge{
+    position absolute
+    left -6px
+    top 0px
+    height 100%
+    width 6px
+  }
+  a{
+    &>div:hover{
+      color rgba(0, 135, 255, 1)
+      background-color rgba(0, 135, 255, 0.1)
+      .el-icon-arrow-down{
+        transform:rotate(-90deg)
+      }
+    }
+    .sm-menu-item-group-title{
+      color rgba(0, 0, 0, 0.65)
+      height 32px
+      padding-left 16px
+      line-height 32px
+    }
+  }
+}
+.sm-menu-item-group{
+  position relative
+  .el-icon-arrow-down{
+    font-size 12px
+    right 16px
+    top 10px
+    position absolute
+  }
+}

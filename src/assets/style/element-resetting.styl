@@ -1,0 +1,35 @@
+
+  .el-table-filter{
+    .el-table-filter__bottom button{
+      visibility hidden
+    }
+  }
+
+  .el-table-filter{
+    .el-table-filter__bottom {
+      button{
+        &:after {
+          border-radius 4px
+          padding 6px 17px
+          line-height 32px
+        }
+        &:nth-child(1):after {
+          content:'确认'
+          visibility: visible
+          border 1px #0087FF solid
+          background-color: #0087FF
+          color #fff
+        }
+        &:nth-child(2){
+          position relative
+          right -20px
+          &:after {
+            content:'重置'
+            visibility: visible
+            border 1px #D9D9D9 solid
+            color: rgba(0, 0, 0, 0.65)
+          }
+        }
+      }
+    }
+  }

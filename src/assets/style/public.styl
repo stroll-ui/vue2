@@ -1,0 +1,95 @@
+.bcf
+  background-color #ffffff
+
+.oh
+  overflow hidden
+.lf
+  float left
+.rf
+  float right
+.cb
+  clear both
+
+.ct
+  text-align center
+.rt
+  text-align right
+.lt
+  text-align left
+
+.cp
+  cursor pointer
+
+.ell
+  overflow hidden !important
+  white-space nowrap !important
+  text-overflow ellipsis !important
+  word-break normal !important
+
+.ctd
+  transform translate(0%,25%)
+  margin-top -25%
+
+.sm-main-box
+  padding 20px
+  border-radius 5px
+  background-color #fff
+
+.smButton.iconSapn {
+  i{
+    position relative
+    left -6px
+    font-size: 14px
+  }
+}
+
+.smButton.icon {
+  &.el-button--mini{
+    padding: 0px
+    border: none
+    background-color: rgba(0,0,0,0)
+  }
+  &.el-button--small{
+    padding: 6px
+  }
+  &.el-button--medium{
+    padding: 8px
+  }
+  &.el-button--default{
+    padding: 10px
+  }
+}
+
+
+/* 滚动条 */
+::-webkit-scrollbar
+  width 9px
+  height 9px
+
+/* 滚动槽 */
+::-webkit-scrollbar-track
+  -webkit-box-shadow #dddddd
+  border-radius 10px
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb
+  border-radius 10px
+  background-color #dddddd
+  -webkit-box-shadow #dddddd
+
+::-webkit-scrollbar-thumb:window-inactive
+  background-color #dddddd
+
+distance = 4 6 8 10 12 14 16 18 20
+direction = t top, r right, b bottom, l left
+for num in distance
+  for dir in direction
+    .m{dir[0]}{num}
+      margin-{dir[1]}: 1px * num
+    .p{dir[0]}{num}
+      padding-{dir[1]}: 1px * num
+
+round = 4 8 10
+for num in round
+  .bor-rad{num}
+    border-radius 1px * num
